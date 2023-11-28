@@ -1,5 +1,5 @@
 // Load the CSV file
-d3.csv('CDPH_Environmental_Complaints_Clean.csv').then(function(data) {
+d3.csv('js/CDPH_Environmental_Complaints_Clean.csv').then(function(data) {
     // Calculate the total count of all complaint types
     var totalCount = data.length;
 
