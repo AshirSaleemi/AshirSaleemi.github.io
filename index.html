@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,14 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
+
 <body>
     <div class="jumbotron text-center">
-        <h1>Pk Viz (Sample)</h1>
+        <h1>Pk Viz</h1>
     </div>
     <div class="container">
         <div class="row">
@@ -34,6 +36,50 @@
         <div class="row">
             <div class="col-12">
                 <div class="d-flex justify-content-center">
+                    <!-- Add the new dropdown menu here -->
+                    <label for="attributeSelect">Select Attribute:</label>
+                    <select id="attributeSelect" class="form-control">
+                        <option value="STREET TYPE">Street Type</option>
+                        <option value="COMPLAINT TYPE">Complaint Type</option>
+                        <!-- Add the new options here -->
+                        <option value="Other">Other</option>
+                        <option value="Air Pollution Work Order">Air Pollution Work Order</option>
+                        <option value="Service Stations/Storage Tanks Work Order">Service Stations/Storage Tanks Work Order</option>
+                        <option value="Noise Complaint">Noise Complaint</option>
+                        <option value="Illegal Dumping Work Order">Illegal Dumping Work Order</option>
+                        <option value="Asbestos Work Order">Asbestos Work Order</option>
+                        <option value="Toxics Hazardous Materials Work Order">Toxics Hazardous Materials Work Order</option>
+                        <option value="Permits Issued by DOE Work Order">Permits Issued by DOE Work Order</option>
+                        <option value="Recycling Work Order">Recycling Work Order</option>
+                        <option value="Abandoned Site">Abandoned Site</option>
+                        <option value="AIR POLLUTION WORK ORDER">AIR POLLUTION WORK ORDER</option>
+                        <option value="TOXICS HAZARDOUS MATERIALS WORK ORDER">TOXICS HAZARDOUS MATERIALS WORK ORDER</option>
+                        <option value="CONSTRUCTION AND DEMOLITION">CONSTRUCTION AND DEMOLITION</option>
+                        <option value="ILLEGAL DUMPING WORK ORDER">ILLEGAL DUMPING WORK ORDER</option>
+                        <option value="ASBESTOS WORK ORDER">ASBESTOS WORK ORDER</option>
+                        <option value="WATER POLLUTION">WATER POLLUTION</option>
+                        <option value="NOISE COMPLAINT">NOISE COMPLAINT</option>
+                        <option value="VEHICLE IDLING WORK ORDER">VEHICLE IDLING WORK ORDER</option>
+                        <option value="ABANDONED SITE">ABANDONED SITE</option>
+                        <option value="RECYCLING WORK ORDER">RECYCLING WORK ORDER</option>
+                        <option value="SERVICE STATIONS/STORAGE TANKS WORK ORDER">SERVICE STATIONS/STORAGE TANKS WORK ORDER</option>
+                        <option value="PERMITS ISSUED BY DOE WORK ORDER">PERMITS ISSUED BY DOE WORK ORDER</option>
+                        <option value="Water Pollution">Water Pollution</option>
+                        <option value="Vehicle Idling Work Order">Vehicle Idling Work Order</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-center">
+                    <div id="vis5" class="my-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-center">
                     <div id="vis4" class="my-3"></div>
                 </div>
             </div>
@@ -41,4 +87,5 @@
     </div>
     <script src="js/main.js"></script>
 </body>
+
 </html>
