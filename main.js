@@ -173,4 +173,6 @@ var bar_spec2 = {
     // Embed the linked view
     vegaEmbed('#vis4', linked_view);
     
+
+
 });

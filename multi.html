@@ -18,31 +18,82 @@
             <a class="tab" href="index.html">Single-linked Visualization</a>
             <a class="tab" href="spatial.html">Spacial Visualization</a>
         </div>
+       
+        
     </div>
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="d-flex justify-content-center">
-                    <div id="vis1" class="my-3"></div>
+                    <select id="year-select" class="custom-select">
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                    </select>
                 </div>
-            </div>
-        </div>
-        <!-- <div class="row">
-            <div class="col-12">
                 <div class="d-flex justify-content-center">
-                    <div id="vis2" class="my-3"></div>
-                    <div id="vis3" class="my-3"></div>
+                    <div id="vis1" class="my-3"></div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
+                <div class="form-group">
+                    <label for="direction-select">Direction:</label>
+                    <select id="direction-select" class="form-control">
+                        <!-- Replace with actual directions -->
+                        <option value="N">North</option>
+                        <option value="S">South</option>
+                        <option value="E">East</option>
+                        <option value="W">West</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="street-name-select">Street Name:</label>
+                    <select id="street-name-select" class="form-control">
+                        <option value="FAIRFIELD">FAIRFIELD</option>
+                        <option value="KINZIE">KINZIE</option>
+                        <option value="MICHIGAN">MICHIGAN</option>
+                        <option value="WABASH">WABASH</option>
+                        <option value="AVENUE O">AVENUE O</option>
+                        <option value="BELL">BELL</option>
+                        <option value="104TH">104TH</option>
+                        <option value="MARSHFIELD">MARSHFIELD</option>
+                        <option value="WOOD">WOOD</option>
+                        <option value="PRINCETON">PRINCETON</option>
+                        <option value="GREEN">GREEN</option>
+                    </select>
+                </div>
                 <div class="d-flex justify-content-center">
                     <div id="vis4" class="my-3"></div>
                 </div>
             </div>
-        </div> -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="street-name-select">Street Name:</label>
+                    <select id="street-name-select2" class="form-control">
+                        <option value="KINZIE">KINZIE</option>
+                        <option value="MICHIGAN">MICHIGAN</option>
+                        <option value="WABASH">WABASH</option>
+                        <option value="AVENUE O">AVENUE O</option>
+                        <option value="BELL">BELL</option>
+                        <option value="104TH">104TH</option>
+                        <option value="MARSHFIELD">MARSHFIELD</option>
+                        <option value="WOOD">WOOD</option>
+                        <option value="PRINCETON">PRINCETON</option>
+                        <option value="GREEN">GREEN</option>
+                    </select>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div id="vis5" class="my-3"></div>
+                </div>
+            </div>
+        </div>
+        
     </div>
-    <script src="main.js"></script>
+    <script src="multi.js"></script>
 </body>
 </html>

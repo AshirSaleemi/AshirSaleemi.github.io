@@ -42,3 +42,9 @@ body {
 .tab:hover {
     background-color: #0056b3;
 }
+
+.custom-select {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
